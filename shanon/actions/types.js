@@ -1,0 +1,1 @@
+export const ANGKA = 'ANGKA';
