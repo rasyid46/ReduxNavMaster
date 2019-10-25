@@ -31,7 +31,7 @@ Below Expectation (0-39)
 
 BE  -> tampilan 	
 ME  -> implementasi redux + berpindah page menggunkan state 	
-BE  -> implementasi redux + perpindahan page menggunakan react-navigation 
+EE  -> implementasi redux + perpindahan page menggunakan react-navigation 
 
 ```
 ## referensi
