@@ -21,8 +21,11 @@ gradle build --warning-mode=all
  BE (0-39 )-> tampilan 
  ME (40- 70) -> implementasi redux + berpindah page menggunkan state 
  BE  (71-> 100) -> implementasi redux + perpindahan page menggunakan react-navigation 
- config navifation 
+
+
 ## referensi
+
+https://reactnavigation.org/docs/en/getting-started.html
 
 https://react-redux.js.org/introduction/quick-start
 
