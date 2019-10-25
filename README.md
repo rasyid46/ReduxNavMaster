@@ -29,9 +29,9 @@ Exceed Expecctation (70-100)
 Meet Expectation (40-70)      
 Below Expectation (0-39)    
 
-EE   -> validasi inputan 
-ME   -> membuat rest api dan respon api (seragam)
-BE  -> config db + membuat migrasi
+BE  -> tampilan 	
+ME  -> implementasi redux + berpindah page menggunkan state 	
+BE  -> implementasi redux + perpindahan page menggunakan react-navigation 
 
 ```
 ## referensi
