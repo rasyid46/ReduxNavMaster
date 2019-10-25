@@ -18,11 +18,22 @@ gradle build --warning-mode=all
 ```
 
 ## penilaian
- BE (0-39 )-> tampilan 
- ME (40- 70) -> implementasi redux + berpindah page menggunkan state 
- BE  (71-> 100) -> implementasi redux + perpindahan page menggunakan react-navigation 
 
+```
+The Coding Challenges can be evaluated across common parameters like:
+a. Clean Code
+b. Naming
+c. Testing
 
+Exceed Expecctation (70-100)  
+Meet Expectation (40-70)      
+Below Expectation (0-39)    
+
+EE   -> validasi inputan 
+ME   -> membuat rest api dan respon api (seragam)
+BE  -> config db + membuat migrasi
+
+```
 ## referensi
 
 https://reactnavigation.org/docs/en/getting-started.html
