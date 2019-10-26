@@ -1,0 +1,1 @@
+export const CEK_GANJILGENAP = 'CEK_GANJILGENAP';
