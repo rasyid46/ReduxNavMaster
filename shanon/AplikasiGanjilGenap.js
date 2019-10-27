@@ -7,11 +7,16 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import ListItem from './component/ListItem';
 import {connect} from 'react-redux';
 import {addAngka} from './actions';
 
 class AplikasiGanjilGenap extends React.Component {
+  static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#73c6b6',
+    },
+  };
   state = {bilangan: null, statusBilangan: null};
 
   ganjilGenap = () => {
@@ -19,24 +24,6 @@ class AplikasiGanjilGenap extends React.Component {
     this.setState({bilangan: angka});
 
     let status;
-
-    // if (this.state.bilangan === '') {
-    //   return;
-    // } else {
-    //   <View style={{flexDirection: 'row', marginTop: 200, marginRight: 15}}>
-    //     <TouchableOpacity>
-    //       <View style={styles.button}>
-    //         <Text style={styles.buttonText}>Redux</Text>
-    //       </View>
-    //     </TouchableOpacity>
-
-    //     <TouchableOpacity>
-    //       <View style={styles.button}>
-    //         <Text style={styles.buttonText}>Data Diri</Text>
-    //       </View>
-    //     </TouchableOpacity>
-    //   </View>
-    // }
 
     if (parseInt(angka) % 2 === 1) {
       status = 'Bilangan Ganjil';
@@ -63,19 +50,20 @@ class AplikasiGanjilGenap extends React.Component {
             </View>
           )}
         />
-
-        {/* <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
-          <TouchableOpacity>
+        <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('Home')}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Redux</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => this.props.navigation.navigate('Data')}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Data Diri</Text>
             </View>
           </TouchableOpacity>
-        </View> */}
+        </View>
       </View>
     );
   };
@@ -108,7 +96,7 @@ class AplikasiGanjilGenap extends React.Component {
 
         <View style={styles.listContainer}>{this.output()}</View>
 
-        <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
+        {/* <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
           <TouchableOpacity>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Redux</Text>
@@ -119,8 +107,7 @@ class AplikasiGanjilGenap extends React.Component {
               <Text style={styles.buttonText}>Data Diri</Text>
             </View>
           </TouchableOpacity>
-        </View>
-
+        </View> */}
       </View>
     );
   }

@@ -1,11 +1,13 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import AplikasiGanjilGenap from './AplikasiGanjilGenap';
+import AppReduxGanjilGenap from './AppReduxGanjilGenap';
+import dataDiri from './DataDiri';
 
 const RootStack = createStackNavigator(
   {
     //The Routes
-    Home: {screen: AplikasiGanjilGenap},
+    Home: {screen: AppReduxGanjilGenap},
+    Data: {screen: dataDiri},
   },
   {
     //Default Route
@@ -15,4 +17,3 @@ const RootStack = createStackNavigator(
 //create app container
 const Container = createAppContainer(RootStack);
 export default Container;
-
