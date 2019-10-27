@@ -38,13 +38,13 @@ class ReduxGanjilGenap extends Component {
             <View style={styles.container}>
                 <View style={styles.inputContainer}>
                     <TextInput
-                        placeholder="Input Number"
+                        placeholder="Masukan Angka"
                         style={styles.angkaInput}
                         value={this.state.inputAngka}
                         onChangeText={this.inputAngkaChangeHandler}
                     />
                     <Button
-                        title="Add"
+                        title="Tambahkan"
                         style={styles.buttonAngka}
                         onPress={this.angkaSubmitHandler}
                     />

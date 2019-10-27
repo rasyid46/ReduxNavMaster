@@ -11,18 +11,42 @@ class DataDiri extends Component {
     static navigationOptions = {
         title: "Profile",
         headerStyle: {
-            backgroundColor: "#73c6b6"
+            backgroundColor: "#E49072"
         }
     }
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.headerText}>Data Diri</Text>
-                <View style={styles.loremContainer}>
-                    <Text>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <Text style={styles.headerText}>Bangkitlah, Berjuang!</Text>
+                <View style={styles.puisiContainer}>
+                    <Text>"Keberhasilan dan kegagalan itu saling melengkapi.
+                            Itulah bumbu-bumbu kehidupan.
+                            Tapi ingat, jangan berlarut-larut dalam kegagalan.
+                            Karena keberhasilan sudah menunggu di depan.
 
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</Text>
+                            Jika terjatuh, bangkitlah.
+                            Bergerak, melangkah, dan teruslah berjuang.
+                            Tak masalah jika tertatih-tatih.
+                            Tak apa berhenti seketika.
+                            Tapi jangan terlena.
+                            Apalagi sampai menjatuhkan diri kembali.
+
+                            Aku Bisa.
+                            Aku tak lelah.
+                            Aku hanya butuh dorongan.
+                            Aku tak menyerah.
+                            Aku yakin Aku bisa.
+                            Ini bukan sebuah beban.
+                            Tapi tantangan.
+                            Pengalaman membuatku berani.
+                            Berani hadapi tantangan.
+                            Tak boleh takut gagal.
+
+                            Karena setelah kegagalan aka nada kesuksesan.
+                            Kegagalan adalah pembelajaran menuju sukses.
+                            Aku yakin.
+                            Aku pasti bisa".
+                    </Text>
                 </View>
                 <View style={styles.buttonContainer}>
                     <Button title="Redux" onPress={() => this.props.navigation.navigate("Redux")} />
@@ -37,7 +61,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "space-around",
         alignItems: "center",
-        backgroundColor: "#F5FCFF"
+        backgroundColor: "#FFEAE2"
     },
     headerText: {
         fontSize: 20,
@@ -45,7 +69,7 @@ const styles = StyleSheet.create({
         margin: 10,
         fontWeight: "bold"
     },
-    loremContainer: {
+    puisiContainer: {
         width: '60%',
         alignItems: 'center'
     },

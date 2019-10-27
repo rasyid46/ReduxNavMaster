@@ -9,8 +9,8 @@ import Redux from './redux/AppRedux';
 class ReduxActivity extends Component {
     static navigationOptions = {
         title: 'Home',
-        headerStyle: { backgroundColor: '#03A9F4' },
-        headerTintColor: '#fff',
+        headerStyle: { backgroundColor: '#F3DA3A' },
+        headerTintColor: 'white',
         headerTitleStyle: { fontWeight: 'bold' },
     };
     render() {
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'space-around',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF'
+        backgroundColor: '#FFFBE2'
     },
     headerText: {
         fontSize: 20,
