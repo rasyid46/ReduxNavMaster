@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import ganjilGenapReducer from './ganjilGenapReducer';
+import ganjilGenapReducer from './ganjilGenapReducers';
 
 const allReducers = combineReducers({
     dataAngka: ganjilGenapReducer

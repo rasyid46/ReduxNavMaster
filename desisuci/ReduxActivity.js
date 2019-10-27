@@ -4,7 +4,7 @@ import {
     View,
     Button
 } from 'react-native';
-import Redux from './Redux/Redux';
+import Redux from './redux/AppRedux';
 
 class ReduxActivity extends Component {
     static navigationOptions = {
