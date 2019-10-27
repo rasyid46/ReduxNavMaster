@@ -20,6 +20,24 @@ class AplikasiGanjilGenap extends React.Component {
 
     let status;
 
+    // if (this.state.bilangan === '') {
+    //   return;
+    // } else {
+    //   <View style={{flexDirection: 'row', marginTop: 200, marginRight: 15}}>
+    //     <TouchableOpacity>
+    //       <View style={styles.button}>
+    //         <Text style={styles.buttonText}>Redux</Text>
+    //       </View>
+    //     </TouchableOpacity>
+
+    //     <TouchableOpacity>
+    //       <View style={styles.button}>
+    //         <Text style={styles.buttonText}>Data Diri</Text>
+    //       </View>
+    //     </TouchableOpacity>
+    //   </View>
+    // }
+
     if (parseInt(angka) % 2 === 1) {
       status = 'Bilangan Ganjil';
     } else {
@@ -32,16 +50,33 @@ class AplikasiGanjilGenap extends React.Component {
 
   output = () => {
     return (
-      <FlatList
-        style={styles.listContainer}
-        data={this.props.dataAngka} // kalo ada props berarti ambil dari reducers
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={info => (
-          <View>
-            <Text>{info.item.angka}</Text>
-          </View>
-        }
-      />
+      <View>
+        <FlatList
+          style={styles.listContainer}
+          data={this.props.dataAngka} // kalo ada props berarti ambil dari reducers
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={info => (
+            <View style={styles.listItem}>
+              <Text>
+                {info.item.angka} adalah {info.item.status}
+              </Text>
+            </View>
+          )}
+        />
+
+        {/* <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
+          <TouchableOpacity>
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Redux</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Data Diri</Text>
+            </View>
+          </TouchableOpacity>
+        </View> */}
+      </View>
     );
   };
 
@@ -71,8 +106,21 @@ class AplikasiGanjilGenap extends React.Component {
           </TouchableOpacity>
         </View>
 
-        {/* <Text>{this.state.bilangan}</Text> */}
         <View style={styles.listContainer}>{this.output()}</View>
+
+        <View style={{flexDirection: 'row', marginTop: 300, marginRight: 15}}>
+          <TouchableOpacity>
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Redux</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={styles.button}>
+              <Text style={styles.buttonText}>Data Diri</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+
       </View>
     );
   }
@@ -81,14 +129,22 @@ class AplikasiGanjilGenap extends React.Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: 'yellow',
+    backgroundColor: '#38a038',
     height: 900,
+  },
+  listItem: {
+    width: 300,
+    padding: 10,
+    marginBottom: 10,
+    marginRight: 10,
+    marginLeft: 30,
+    backgroundColor: '#95d895',
   },
   input: {
     width: 200,
     borderWidth: 2,
     marginLeft: 20,
-    marginTop: 20,
+    marginTop: 60,
     marginBottom: 20,
     borderRadius: 8,
   },
@@ -96,10 +152,13 @@ const styles = StyleSheet.create({
     width: 150,
     height: 'auto',
     alignContent: 'center',
-    elevation: 5,
+    // elevation: 5,
     backgroundColor: 'black',
     padding: 20,
-    marginRight: 10,
+    marginRight: 5,
+    marginLeft: 19,
+    marginBottom: 40,
+    justifyContent: 'flex-end',
   },
   buttonText: {
     color: 'white',
