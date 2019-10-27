@@ -13,9 +13,6 @@ import {addAngka} from './actions';
 class AplikasiGanjilGenap extends React.Component {
   static navigationOptions = {
     title: 'Home',
-    headerStyle: {
-      backgroundColor: '#73c6b6',
-    },
   };
   state = {bilangan: null, statusBilangan: null};
 

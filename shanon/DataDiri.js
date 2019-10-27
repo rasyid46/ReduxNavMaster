@@ -17,7 +17,7 @@ class DataDiri extends React.Component {
         </View>
 
         <View style={{flexDirection: 'row'}}>
-          <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')}>
+          <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Redux</Text>
             </View>
@@ -39,19 +39,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#38a038',
+    height: 750,
   },
   content: {
     margin: 10,
-    // color: "white",
+    color: "white",
   },
   box: {
     borderWidth: 3,
     // borderColor: "#38a038",
     borderRadius: 5,
     height: 300,
-    width: 50,
+    width: 250,
     // textAlign: "center",
-    marginTop: 70,
     marginBottom: 40,
     marginLeft: 40,
     marginRight: 40,
