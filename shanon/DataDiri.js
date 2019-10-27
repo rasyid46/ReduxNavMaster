@@ -17,13 +17,13 @@ class DataDiri extends React.Component {
         </View>
 
         <View style={{flexDirection: 'row'}}>
-          <TouchableOpacity onPress={this.ganjilGenap}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Redux</Text>
             </View>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={this.ganjilGenap}>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Data')}>
             <View style={styles.button}>
               <Text style={styles.buttonText}>Data Diri</Text>
             </View>
