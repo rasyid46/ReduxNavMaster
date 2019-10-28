@@ -8,4 +8,17 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-scree
 3. "tambahan library di file android/app/build.gradle pada bagian dependencies"
 
 "4. menambahkan libray react-native-gesture-handler for Android pada MainActivity.java"
- 
+
+5. run apps jalan tidak
+
+6. membuat navigasi
+   - buat menu navigasi (menampung menu navigasi)
+   - buat componen menu-menu 
+
+7. semua file di simpan di floder src/componen
+
+    menu navigasi->ScreenContainer.js 
+      HomeActivity.js (sebagai menu utama)
+      ProfileActivity.js (sebagai menu profile)
+
+8. buat dulu menu  HomeActivity.js     
