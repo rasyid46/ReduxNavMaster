@@ -1,6 +1,6 @@
 // importing module needed
 import React,{Component} from 'react';
-import {StyleSheet,View,FlatList,Button,TextInput} from 'react-native';
+import {StyleSheet,View,FlatList,Button,TextInput,ScrollView} from 'react-native';
 import { addNumber } from './actions';  // importing fungsi action addNumber yang udah dibuat sebelumnya
 import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
@@ -75,6 +75,7 @@ class Number extends Component{
                     <TextInput 
                         style={styles.inputCity}
                         placeholder='Masukkan Inputan'
+                        placeholderTextColor='white'
                         onChangeText={this.textInputChangeHandler}
                         value={this.state.number}
                     />
@@ -83,7 +84,9 @@ class Number extends Component{
                         title='Add'
                     />
                 </View>
-                <View style={styles.listContainer}>{this.output()}</View>
+                <ScrollView style={styles.listContainer}>
+                    <View>{this.output()}</View>
+                </ScrollView>
             </View>
         );
     }
@@ -100,14 +103,18 @@ const styles=StyleSheet.create({
     inputContainer:{
         flexDirection:'row',
         width:'100%',
-        justifyContent:'space-between'
+        justifyContent:'space-between',
     },
     inputCity:{
         width:'90%',
-        backgroundColor:'white'
+        backgroundColor:'purple',
+        padding:10,
+        color:'white'
     },
     listContainer:{
-        width:'100%'
+        width:'100%',
+        backgroundColor:'black',
+        height:'93%'
     }
 })
 
