@@ -1,13 +1,13 @@
 import React, {Component} from 'react'; 
 import { Text, View} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 class Index extends Component {
   render() {
     return (
       <View>
         <Text>Hai</Text>
-        <Icon name="ios-home" size={30} color="#900" />
+        <Icon name="rocket" size={30} color="#900" />
       </View>
     );
   }
@@ -15,4 +15,3 @@ class Index extends Component {
 
 import ScreenContainer from './ff/ScreenContainer';
 export default ScreenContainer;
-//export default Index;
