@@ -15,13 +15,13 @@ class GanjilGenap extends Component {
             return;
         }
 
-        let nilai = 0;
-        let nilaiInput = parseInt(this.state.ganjilGenapName);
-        if( nilaiInput % 2 == 0 ){
-            nilai = nilaiInput + " Genap";
-        }else{
-            nilai = nilaiInput + " Ganjil";
-        }
+        // let nilai = 0;
+        // let nilaiInput = parseInt(this.state.ganjilGenapName);
+        // if( nilaiInput % 2 == 0 ){
+        //     nilai = nilaiInput + " Genap";
+        // }else{
+        //     nilai = nilaiInput + " Ganjil";
+        // }
         this.props.add(nilai);
     };
 
