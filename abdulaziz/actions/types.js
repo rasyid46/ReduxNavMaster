@@ -1,0 +1,1 @@
+export const TYPE_GANJIL_GENAP='TYPE_GANJIL_GENAP';
