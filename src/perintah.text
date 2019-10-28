@@ -1,3 +1,6 @@
-instalsi react react-navigation
+1. instalsi react react-navigation
 
   yarn add react-navigation
+2. instalsi library tambahan 
+
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23
