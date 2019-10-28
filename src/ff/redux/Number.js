@@ -1,7 +1,7 @@
 // importing module needed
 import React,{Component} from 'react';
 import {StyleSheet,View,FlatList,Button,TextInput} from 'react-native';
-import { addNumber } from './actions';
+import { addNumber } from './actions';  // importing fungsi action addNumber yang udah dibuat sebelumnya
 import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import NumItem from './components/NumItem';
@@ -39,7 +39,7 @@ class Number extends Component{
                 output+=" adalah bilangan nol";
             } else if(parseInt(this.state.number)%2==1) {
                 output+=" adalah bilangan ganjil";
-            } else if(parseInt(this.state.number)%2==1) {
+            } else if(parseInt(this.state.number)%2==0) {
                 output+=" adalah bilangan genap";
             } else {
                 output+=" adalah bukan bilangan";
