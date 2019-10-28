@@ -4,3 +4,5 @@
 2. instalsi library tambahan 
 
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23
+
+3. tambahan library di file android/app/build.gradle pada bagian dependencies
