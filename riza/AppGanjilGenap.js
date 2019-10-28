@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
-import {View, Text, Botton, TextInput}from 'react-native';
+import {View, Text, Button, TextInput}from 'react-native';
 
 //import component redux
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux'; //connect React Component ke Redux Store
 //panggil function action yg sudah di buat sebelumnya {actionGanjilGenap}
-import {actionGanjilGenap} from './action/index';
+import {actionGanjilGenap} from './actions/index';
 
 class AppGanjilGenap extends Component{
-    prosesSubmit = () => {
-        alert('oke');
-    };
+    // prosesSubmit = () => {
+    //     alert('oke');
+    // };
 
     render(){
         return(
             <View>
                 <Text>App Ganjil Genap</Text>
                 <TextInput placeholder="input angka"/>
-                <Botton title="Proses" onPress={this.prosesSubmit}/>
+                <Button title="Proses" onPress={this.prosesSubmit}/>
             </View>
         );
     }
@@ -38,7 +38,7 @@ function matchDispatchToProps(dispatch){
      dispatch,
     );
 }
-
+//export default AppGanjilGenap;
 export default connect(
     mapStateToProps,
     matchDispatchToProps,

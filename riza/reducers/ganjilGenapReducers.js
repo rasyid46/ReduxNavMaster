@@ -1,4 +1,4 @@
-import {TYPE_GANJIL_GENAP} from '../action/types';
+import {TYPE_GANJIL_GENAP} from '../actions/types';
 
 //import inisialstate awal sebagai media penyimpanan data
 const inisialState = {
@@ -6,7 +6,7 @@ const inisialState = {
 };
 
 //membuat fungsi reducer
-const ganjilGenapReducer = (state = inisialState, action) => {
+const ganjilGenapReducers = (state = inisialState, action) => {
     switch (action.type) {
         case TYPE_GANJIL_GENAP:
             return{
@@ -21,4 +21,4 @@ const ganjilGenapReducer = (state = inisialState, action) => {
     }
 };
 
-export default ganjilGenapReducer;
+export default ganjilGenapReducers;
