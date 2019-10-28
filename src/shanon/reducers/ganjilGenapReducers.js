@@ -4,7 +4,7 @@ import {TYPE_GANJIL_GENAP} from '../actions/types';
 //membuat inisial state awal sebagai media penyimpanan data
 
 const inisialState = {
-  listInput: [], //tampung nilai berupa array
+  listInputan: [], //tampung nilai berupa array
 };
 
 //membuat fungsi reducers

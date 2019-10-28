@@ -1,5 +1,12 @@
 import React from 'react';
-import {StyleSheet, View, Text, TextInput, Button} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  Text,
+  TextInput,
+  Button,
+  FlatList,
+} from 'react-native';
 //import component redux
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux'; //connect React Component ke Redux Store
@@ -7,16 +14,55 @@ import {connect} from 'react-redux'; //connect React Component ke Redux Store
 import {actionGanjilGenap} from './actions/index';
 
 class AppGanjilGenap extends React.Component {
+  state = {
+    inputNumber: '',
+  };
+  numberChangeHandler = value => {
+    this.setState({
+      inputNumber: value,
+    });
+  };
+
+  numberOutput = () => {
+    return (
+      <FlatList
+        data={this.props.listNumberFromReducer}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={info => <Text> {info.item.value} </Text>}
+      />
+    );
+  };
+
   prosesSubmit = () => {
-    alert('ocee');
+    //kirim parameter (
+    let inputanUser = this.state.inputNumber;
+    let message;
+    if (parseInt(inputanUser) % 2 === 0) {
+      message = 'Bilangan genap';
+    } else if (parseInt(inputanUser) % 2 === 1) {
+      message = 'Bilangan ganjil';
+    } else {
+      message = 'Bernilai bukan angka';
+    }
+
+    this.props.actionGanjilGenap(message);
+    //data hasil inputan
+    console.log('datainputan');
+    let dataInputan = this.props.listNumberFromReducer;
+    console.log(dataInputan);
   };
 
   render() {
     return (
       <View>
         <Text>AppGanjilGenap</Text>
-        <TextInput placeholder="input angka" />
+        <TextInput
+          placeholder="input angka"
+          onChangeText={this.numberChangeHandler}
+          value={this.state.inputNumber}
+        />
         <Button title="Proses" onPress={this.prosesSubmit} />
+        {this.numberOutput()}
       </View>
     );
   }
@@ -27,7 +73,7 @@ function mapStateToProps(state) {
   console.log('Data store reducer');
   console.log(state);
   return {
-    listNumberFormReducer: state,
+    listNumberFromReducer: state.reducerGanjilGenap.listInputan,
   };
 }
 
