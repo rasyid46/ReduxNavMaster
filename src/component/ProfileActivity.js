@@ -2,6 +2,13 @@ import React, {Component} from 'react';
 import {Text, View, Button} from 'react-native';
 
 class ProfileActivity extends Component {
+  static navigationOptions = {
+    title: 'Profile',
+    headerStyle: {
+      backgroundColor: '#73C6B6',
+    },
+  };
+
   render() {
     return (
       <View style>
