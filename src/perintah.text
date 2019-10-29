@@ -16,9 +16,22 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-scree
    - buat componen menu-menu 
 
 7. semua file di simpan di floder src/componen
-
-    menu navigasi->ScreenContainer.js 
+      menu navigasi->ScreenContainer.js 
       HomeActivity.js (sebagai menu utama)
       ProfileActivity.js (sebagai menu profile)
 
 8. buat dulu menu  HomeActivity.js     
+
+"9. Recana Aplikasi "
+
+10.Tes componen HomeActivity.js
+sudah jalan screen shoot Aplikasi simpan di dokumen
+
+11 buat dulu menu  ProfileActivity.js
+12 Tes componen menu ProfileActivity.js jalan ?
+sudah jalan screen shoot Aplikasi simpan di dokumen
+
+13 buat menu untuk menampung navigasi
+ScreenContainer.js 
+
+"14 File awal untuk navigasi  list menu dan menu"
