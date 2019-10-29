@@ -6,7 +6,10 @@ class HomeActivity extends Component {
     return (
       <View>
         <Text>Home Activity</Text>
-        <Button title="Go to Profile Activity" />
+        <Button
+          title="Go to Profile Activity"
+          onPress={() => this.props.navigation.navigate('Profile')}
+        />
       </View>
     );
   }

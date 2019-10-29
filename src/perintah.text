@@ -5,6 +5,8 @@
 
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23
 
+npm i react-navigation-stack
+
 3. "tambahan library di file android/app/build.gradle pada bagian dependencies"
 
 "4. menambahkan libray react-native-gesture-handler for Android pada MainActivity.java"
@@ -13,9 +15,9 @@ yarn add react-native-reanimated react-native-gesture-handler react-native-scree
 
 6. membuat navigasi
    - buat menu navigasi (menampung menu navigasi)
-   - buat componen menu-menu 
+   - buat component menu-menu 
 
-7. semua file di simpan di floder src/componen
+7. semua file di simpan di floder src/component
       menu navigasi->ScreenContainer.js 
       HomeActivity.js (sebagai menu utama)
       ProfileActivity.js (sebagai menu profile)
@@ -35,3 +37,10 @@ sudah jalan screen shoot Aplikasi simpan di dokumen
 ScreenContainer.js 
 
 "14 File awal untuk navigasi  list menu dan menu"
+
+"15 menyambukan semua menu navigasi dalam file src/App.js"
+16 ganti index apliasi menjadi src/App.js
+
+"17 config awal react-navigasi "
+
+"18 Menyambukan menu"
