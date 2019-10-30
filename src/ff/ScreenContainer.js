@@ -1,11 +1,19 @@
+// importing module needed
 import React from 'react';
 import {View} from 'react-native';
+
+// importing module react-navigation
 import {createAppContainer} from 'react-navigation';
 import {createMaterialBottomTabNavigator}from 'react-navigation-material-bottom-tabs';
+
+// importing module icon
 import Icon from 'react-native-vector-icons/Ionicons';
+
+// importing component created
 import ProfileActivity from './ProfileActivity';
 import AppRedux from './redux/AppRedux';
 
+// create rootStack
 const RootStack = createMaterialBottomTabNavigator(
     {
         //The Routes
@@ -38,5 +46,8 @@ const RootStack = createMaterialBottomTabNavigator(
     }
 );
 
+// buat Navigation Container untuck rootStack
 const Container = createAppContainer(RootStack);
+
+// export
 export default Container;
