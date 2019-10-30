@@ -6,14 +6,14 @@ import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import NumItem from './components/NumItem';
 
-// creating const mapStatetoProps untuk mengubah state global menjadi props
+// creating fungsi mapStatetoProps untuk mengubah state global menjadi props
 const mapStatetoProps=state=>{
     return{
         numData:state.numList.tempArray
     }
 };
 
-// creating const mapDispatchtoProps untuk menggabungkan action&reducers menjadi function add
+// creating fungsi mapDispatchtoProps untuk menggabungkan action&reducers menjadi function add
 const mapDispatchtoProps=dispatch=>{
     return bindActionCreators({add:addNumber},dispatch)
 };
